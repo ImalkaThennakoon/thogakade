@@ -3,13 +3,13 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="302.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controler.DashboardFormController">
+<AnchorPane fx:id="dashboardContext" prefHeight="369.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controler.DashboardFormController">
    <children>
-      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openCustomerFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #1abc9c;" text="Customer Management" textFill="WHITE">
+      <JFXButton layoutX="14.0" layoutY="72.0" onAction="#openCustomerFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #1abc9c;" text="Customer Management" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -17,7 +17,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="240.0" layoutY="14.0" onAction="#openItemFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #3498db;" text="Item Management" textFill="WHITE">
+      <JFXButton layoutX="240.0" layoutY="72.0" onAction="#openItemFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #3498db;" text="Item Management" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -25,7 +25,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="14.0" layoutY="139.0" onAction="#openPlaceOrderFormOnAction" prefHeight="110.0" prefWidth="669.0" style="-fx-background-color: #d35400;" text="Place Order" textFill="WHITE">
+      <JFXButton layoutX="14.0" layoutY="197.0" onAction="#openPlaceOrderFormOnAction" prefHeight="110.0" prefWidth="669.0" style="-fx-background-color: #d35400;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -33,7 +33,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="467.0" layoutY="14.0" onAction="#openOrderDetailsFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #9b59b6;" text="Order Details" textFill="WHITE">
+      <JFXButton layoutX="467.0" layoutY="72.0" onAction="#openOrderDetailsFormOnAction" prefHeight="110.0" prefWidth="214.0" style="-fx-background-color: #9b59b6;" text="Order Details" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -41,7 +41,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label layoutX="607.0" layoutY="280.0" text="Version : 1.0.0.1" />
-      <Label layoutX="14.0" layoutY="280.0" text="Developed By : Tekoon Products" />
+      <Label layoutX="607.0" layoutY="338.0" text="Version : 1.0.0.1" />
+      <Label layoutX="14.0" layoutY="338.0" text="Developed By : Tekoon Products" />
+      <Label layoutX="14.0" layoutY="24.0" text="Thogakade - Developers stack">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="TOP_LEFT" layoutX="446.0" layoutY="24.0" prefHeight="27.0" prefWidth="214.0" text="10:20:25">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="421.0" layoutY="15.0" orientation="VERTICAL" prefHeight="46.0" prefWidth="4.0" />
    </children>
 </AnchorPane>

@@ -28,24 +28,25 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField layoutX="14.0" layoutY="85.0" promptText="Customer Id" />
-      <TextField layoutX="176.0" layoutY="85.0" promptText="Name" />
-      <TextField layoutX="343.0" layoutY="85.0" prefHeight="25.0" prefWidth="188.0" promptText="Address" />
-      <TextField layoutX="549.0" layoutY="85.0" prefHeight="25.0" prefWidth="157.0" promptText="Salary" />
+      <TextField fx:id="txtId" layoutX="14.0" layoutY="85.0" promptText="Customer Id" />
+      <TextField fx:id="txtName" layoutX="176.0" layoutY="85.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="343.0" layoutY="85.0" prefHeight="25.0" prefWidth="188.0" promptText="Address" />
+      <TextField fx:id="txtSalary" layoutX="549.0" layoutY="85.0" prefHeight="25.0" prefWidth="157.0" promptText="Salary" />
       <Separator layoutX="147.0" layoutY="42.0" prefHeight="4.0" prefWidth="367.0" />
-      <JFXButton layoutX="571.0" layoutY="135.0" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #2980b9;" text="Save Customer" textFill="#fcfafa">
+      <JFXButton layoutX="571.0" layoutY="135.0" onAction="#saveCustomerOnAction" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: #2980b9;" text="Save Customer" textFill="#fcfafa">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
       <TextField layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="535.0" promptText="Search Customer" />
-      <TableView layoutX="18.0" layoutY="182.0" prefHeight="289.0" prefWidth="696.0">
+      <TableView fx:id="tblCustomer" layoutX="18.0" layoutY="182.0" prefHeight="289.0" prefWidth="696.0">
+
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="169.0" text="Name" />
-            <TableColumn prefWidth="173.0" text="Address" />
-            <TableColumn prefWidth="137.0" text="Salary" />
-            <TableColumn prefWidth="140.0" text="Options" />
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="169.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="173.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="137.0" text="Salary" />
+            <TableColumn fx:id="colOptions" prefWidth="140.0" text="Options" />
         </columns>
       </TableView>
    </children>
